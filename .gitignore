@@ -1,0 +1,42 @@
+# ---------------------------------------------------------------
+# Datos crudos: NO se versionan.
+# El CSV mensual del BTS pesa ~258 MiB y excede el limite duro de
+# 100 MB por archivo de GitHub. El dataset completo vive en el
+# repositorio en formato Parquet + zstd (data/*.parquet, ~16 MiB),
+# generado con etl/csv_to_parquet.py.
+# ---------------------------------------------------------------
+data/raw/*
+!data/raw/.gitkeep
+*.zip
+*.csv.gz
+
+# Excepciones: el dataset en Parquet y las muestras reducidas si se versionan
+!data/*.parquet
+!data/samples/*.csv
+
+# Artefactos de sistema
+__MACOSX/
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Entornos y dependencias
+.venv/
+venv/
+env/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+node_modules/
+
+# Credenciales y configuracion local
+.env
+.env.local
+*.pem
+*.key
+config.local.*
+
+# Salidas de herramientas BI
+*.pbix.bak
+~$*.xlsx
+~$*.pptx

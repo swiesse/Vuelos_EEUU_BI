@@ -1,0 +1,12 @@
+# Normalizacion de fin de linea
+* text=auto eol=lf
+
+# Los datos se conservan byte a byte, sin conversion de fin de linea
+*.csv  -text
+*.html -text
+
+# Binarios: nunca aplicar conversion de fin de linea ni diff textual
+*.parquet binary
+*.zip     binary
+*.pbix    binary
+*.xlsx    binary
