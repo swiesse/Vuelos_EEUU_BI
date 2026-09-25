@@ -1,4 +1,7 @@
 # Proyecto Final de Business Intelligence - Avance
+
+## Elaborado por: Santiago Wiesse, Gianfranco Scarpati, Alexander Huarancca, Ariadna Lozano
+
 ## Data Mart de Puntualidad Operacional Aérea — *Airline On-Time Performance* (BTS / US DOT)
 
 | Ítem | Detalle |
